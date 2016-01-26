@@ -10,10 +10,10 @@ $sidebarwidth: 420pt;
 $sidebarwidthsmall: 320pt;
 $buttondistance: 12pt;
 
-@import '_sidebar';
 @import '_map';
 @import '_forcegraph';
 @import '_legend';
+@import '_sidebar';
 
 .content {
   position: fixed;
