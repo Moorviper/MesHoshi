@@ -120,6 +120,29 @@ Examples for `globalInfos`:
 
 In order to have global statistics available, you have to run the backend with parameter `--with-rrd` (this only creates globalGraph.png) or generate them in other ways.
 
+## nodeImg (array, optional)
+![](doc/routerpic.png)
+
+This option allows to show router-pictures depending on following case-sensitive parameters:
+
+- `thumbnail` absolute or relative URL to router image
+- `caption` is shown, if `thumbnail` is not present
+
+To insert current node-id in either `href`, `thumbnail` or `caption`
+you can use the case-sensitive template string `{NODE_ID}`.
+
+Examples for `hwImg`:
+    
+      "hwImg": [
+        { "thumbnail": "nodes/{MODELHASH}.png",
+          "caption": "Knoten {MODELHASH}"
+        }
+      ]
+
+The pictures have to be names as the Hash of the String 
+
+      566104371 as example for a TP-Link wdr-3600 V1
+
 ## Colors and Radius for Nodes
 
 In `lib/map.js` you can change the colors and radius for nodes in different states:
