@@ -139,6 +139,13 @@ table.attributes td {
   white-space: normal;
 }
 
+.infobox .clientsMesh {
+  font-family: "ionicons";
+  color: #dbdbdb;
+  word-spacing: -0.2em;
+  white-space: normal;
+}
+
 .infobox {
   position: relative;
   padding: 0.25em 0;
@@ -183,6 +190,7 @@ button::-moz-focus-inner {
 }
 
 button.close {
+  z-index: 1;
   width: auto;
   height: auto;
   font-size: 20pt;
