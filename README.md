@@ -40,6 +40,22 @@ Also, GZip will greatly reduce bandwidth consumption.
 
 Change this to match your communities' name. It will be used in various places.
 
+## fixedCenter (array, optional)
+
+This option allows to fix the map at one specific coordinate depending on following case-sensitive parameters:
+
+- `lat` latitude of the center point
+- `lng` longitude of the center point
+- `radius` visible radius around the center in km
+
+Examples for `fixedCenter`:
+
+    "fixedCenter": {
+      "lat": 50.80,
+      "lng": 12.07,
+      "radius": 30
+    }
+
 ## mapSigmaScale (float)
 
 This affects the initial scale of the map. Greater values will show a larger
